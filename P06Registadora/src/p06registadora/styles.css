@@ -1,0 +1,17 @@
+.button{
+	-fx-border-style: solid;
+}
+
+.text-area {
+    -fx-text-fill: #ffff00;
+    -fx-text-alignment: justify;
+        
+}
+
+.text-area .content {
+    -fx-background-color: black;
+}
+
+.text-area *.text {
+    -fx-text-alignment: right;
+}
