@@ -74,11 +74,11 @@
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="butMais" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="+" GridPane.columnIndex="3">
+                  <Button fx:id="butMais" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="+" GridPane.columnIndex="3">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="butMen" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <Button fx:id="butMen" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="-" GridPane.columnIndex="3" GridPane.rowIndex="1">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
@@ -94,7 +94,7 @@
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="butMul" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="X" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <Button fx:id="butMul" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="X" GridPane.columnIndex="3" GridPane.rowIndex="2">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
@@ -102,15 +102,15 @@
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="bitPoint" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <Button fx:id="bitPoint" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" text="." GridPane.columnIndex="1" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="butC" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #FBF8D3;" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <Button fx:id="butC" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #FBF8D3;" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
-                  <Button fx:id="butDiv" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <Button fx:id="butDiv" alignment="CENTER" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="84.0" prefWidth="68.0" style="-fx-background-color: #F2DDB6;" text="/" GridPane.columnIndex="3" GridPane.rowIndex="3">
                      <font>
                         <Font name="System Bold" size="14.0" />
                      </font></Button>
@@ -121,7 +121,7 @@
             </GridPane>
          </center>
          <bottom>
-            <Button fx:id="butResultado" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #F2DDB6;" stylesheets="@styles.css" text="Resultado" BorderPane.alignment="CENTER">
+            <Button fx:id="butResultado" contentDisplay="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleButtonAction" onKeyPressed="#buttonPressed" onKeyReleased="#buttonReleased" prefHeight="25.0" prefWidth="300.0" style="-fx-background-color: #F2DDB6;" stylesheets="@styles.css" text="Resultado" BorderPane.alignment="CENTER">
                <font>
                   <Font name="System Bold" size="14.0" />
                </font></Button>

@@ -190,17 +190,17 @@ public class FXMLDocumentController implements Initializable {
 
         if (event.getSource() == butMen) {
             //labelresultado.setText(String.valueOf(register.getResultado()));
-            if(!aux.equals("")){
-            //para números com vários algarismos
-            register.regista(Double.valueOf(aux.toString()));
+            if (!aux.equals("")) {
+                //para números com vários algarismos
+                register.regista(Double.valueOf(aux.toString()));
 
-            char c = buffer.charAt(buffer.length() - 1);
-            //para não concatenar + consecutivos
-            if (c != '-') {
-                buffer.append(" -\n");//\n
-                register.defineOperador('-');
-            }
-            aux = new StringBuilder();
+                char c = buffer.charAt(buffer.length() - 1);
+                //para não concatenar + consecutivos
+                if (c != '-') {
+                    buffer.append(" -\n");//\n
+                    register.defineOperador('-');
+                }
+                aux = new StringBuilder();
             }
         }
         //definir o texto da textArea durante o cálculo
@@ -248,7 +248,6 @@ public class FXMLDocumentController implements Initializable {
     //elemento da cena.
     //função para ler keyevents em todas as teclas que está definida como
     //OnKeyPressed() de cada botão
-    
     //a flag serve para evitar que ao clicar numa tecla não programada para a 
     //calculadora, o programa volte a executar para o último request onde ficou 
     boolean flag;
@@ -256,7 +255,7 @@ public class FXMLDocumentController implements Initializable {
     @FXML
     public void buttonPressed(KeyEvent ev) {
         System.out.println("ola");
-        flag=false;
+        flag = false;
 
         if (ev.getCode() == KeyCode.DIGIT0 || ev.getCode() == KeyCode.NUMPAD0) {
             but0.requestFocus();
@@ -327,6 +326,23 @@ public class FXMLDocumentController implements Initializable {
             butDiv.requestFocus();
             flag = true;
         }
+
+        if (ev.getCode() == KeyCode.ENTER) {
+            butResultado.requestFocus();
+            flag = true;
+        }
+
+        if (ev.getCode() == KeyCode.DECIMAL) {
+            bitPoint.requestFocus();
+            flag = true;
+        }
+        
+         if (ev.getCode() == KeyCode.C) {
+            butC.requestFocus();
+            flag = true;
+        }
+
+        //System.out.println(ev.getCode().toString());
     }
 
     @FXML
@@ -335,6 +351,7 @@ public class FXMLDocumentController implements Initializable {
             ActionEvent ae = new ActionEvent(event.getSource(), event.getTarget());
             handleButtonAction(ae);
             event.consume();
+            //System.out.println("Certo: " + event.getCode());
         }
     }
 }
